@@ -95,6 +95,7 @@ jobs:
           images: |
             name=ghcr.io/${{ github.repository }}
             name=tensorchord/cloudnative-pgvecto-rs
+            name=itoutposts/cloudnative-pgvecto.rs
           tags: |
             type=raw,value=${{ matrix.cnpg }}-${{ matrix.pgvectors }},enable=${{ steps.should-release.outputs.result }}
             type=raw,value=${{ steps.version.outputs.pg_major }}-${{ matrix.pgvectors }},enable=${{ steps.should-release.outputs.result }}
